@@ -17,8 +17,8 @@ def rkeys(host: str = "localhost", port: int = 8080, db: int = 0) -> list[str]:
 def rsend(method: str = "get", host: str = "localhost", port: int = 8080, db: int = 0, key: str = "", value: str = ""):
     params = {}
     if key != "":
-        params.update("key", key)
+        params.update({"key", key})
     if value != "":
-        params.update("value", value)
+        params.update({"value", value})
     resp = requests.get(f"http://{host}:{port}/{db}/{method}", params=params)
     return resp.json()

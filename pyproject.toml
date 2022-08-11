@@ -1,6 +1,6 @@
 [project]
 name = "pyrcache"
-version = "1.0.4"
+version = "1.0.5"
 authors = [
   { name="Yamac Eren Ay", email="yamacerenay2001@gmail.com" },
 ]

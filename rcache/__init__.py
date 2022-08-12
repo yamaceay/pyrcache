@@ -5,11 +5,11 @@ import requests
 
 # GET one object
 def rget(key: str, host: str = "localhost", port: int = 8080, db: int = 0) -> any:
-    return rsend("get", host, port, db, key)
+    return rsend("get", key, host, port, db)
 
 # POST one object
 def rset(key: str, value: str, host: str = "localhost", port: int = 8080, db: int = 0):
-    return rsend("set", host, port, db, key, value)
+    return rsend("set", key, value, host, port, db)
 
 # GET all keys
 def rkeys(host: str = "localhost", port: int = 8080, db: int = 0) -> list[str]:

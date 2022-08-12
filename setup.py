@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyrcache",
-    version="1.0.7",
+    version="1.0.9",
     author="Yamac Eren Ay",
     author_email="yamacerenay2001@gmail.com",
     description="Python API for accessing RedisCache",
